@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsManagement.Endpoint.WPF", "TripsManagement\TripsManagement.Endpoint.WPF.csproj", "{42C87521-3D26-43A3-827B-B9548AFEF4ED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsManagement.Core.DomainModels", "TripsManagement.Core.DomainModels\TripsManagement.Core.DomainModels.csproj", "{8F96E41B-F1BC-4669-BAA7-50ECF03E68E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsManagement.Core.ApplicationServices", "TripsManagement.Core.ApplicationServices\TripsManagement.Core.ApplicationServices.csproj", "{71440D29-E53B-47ED-AF93-992B920ECBF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{F9458103-529B-4263-8B21-36FC7BD0ED58}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsManagement.Infra.DataAccess.Sql.Commands", "TripsManagement.Infra.DataAccess.Sql.Commands\TripsManagement.Infra.DataAccess.Sql.Commands.csproj", "{B9AEAAD1-C450-4EA9-A974-BA24FEAAB965}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsManagement.Infra.DataAccess.Sql.Queries", "TripsManagement.Infra.DataAccess.Sql.Queries\TripsManagement.Infra.DataAccess.Sql.Queries.csproj", "{55AAAFA1-07B7-433C-9187-D2DC2422EED4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{7FCF794D-E657-43BE-98E8-CB24988FF49C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Endpoint", "Endpoint", "{EB85DCC5-F822-431C-A3AF-B654677654B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripsManagement.Core.DomainModels.Tests", "TripsManagement.Core.DomainModels.Tests\TripsManagement.Core.DomainModels.Tests.csproj", "{554CA98E-A9C1-4498-969F-799899D5FD9D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A10D21D7-2790-4443-A59B-87BDD73ED7C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripsManagement.Core.ApplicationServices.Tests", "TripsManagement.Core.ApplicationServices.Tests\TripsManagement.Core.ApplicationServices.Tests.csproj", "{C09D3536-BC69-4936-ABA9-BED283863CBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TripsManagement.Endpoint.WPF.Tests", "TripsManagement.Endpoint.WPF.Tests\TripsManagement.Endpoint.WPF.Tests.csproj", "{D91B15CE-9E9E-4D9B-B5A0-C36E53042AC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42C87521-3D26-43A3-827B-B9548AFEF4ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C87521-3D26-43A3-827B-B9548AFEF4ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C87521-3D26-43A3-827B-B9548AFEF4ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C87521-3D26-43A3-827B-B9548AFEF4ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F96E41B-F1BC-4669-BAA7-50ECF03E68E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F96E41B-F1BC-4669-BAA7-50ECF03E68E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F96E41B-F1BC-4669-BAA7-50ECF03E68E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F96E41B-F1BC-4669-BAA7-50ECF03E68E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71440D29-E53B-47ED-AF93-992B920ECBF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71440D29-E53B-47ED-AF93-992B920ECBF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71440D29-E53B-47ED-AF93-992B920ECBF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71440D29-E53B-47ED-AF93-992B920ECBF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9AEAAD1-C450-4EA9-A974-BA24FEAAB965}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9AEAAD1-C450-4EA9-A974-BA24FEAAB965}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9AEAAD1-C450-4EA9-A974-BA24FEAAB965}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9AEAAD1-C450-4EA9-A974-BA24FEAAB965}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55AAAFA1-07B7-433C-9187-D2DC2422EED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55AAAFA1-07B7-433C-9187-D2DC2422EED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55AAAFA1-07B7-433C-9187-D2DC2422EED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55AAAFA1-07B7-433C-9187-D2DC2422EED4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{554CA98E-A9C1-4498-969F-799899D5FD9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{554CA98E-A9C1-4498-969F-799899D5FD9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{554CA98E-A9C1-4498-969F-799899D5FD9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{554CA98E-A9C1-4498-969F-799899D5FD9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C09D3536-BC69-4936-ABA9-BED283863CBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C09D3536-BC69-4936-ABA9-BED283863CBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C09D3536-BC69-4936-ABA9-BED283863CBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C09D3536-BC69-4936-ABA9-BED283863CBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D91B15CE-9E9E-4D9B-B5A0-C36E53042AC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D91B15CE-9E9E-4D9B-B5A0-C36E53042AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D91B15CE-9E9E-4D9B-B5A0-C36E53042AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D91B15CE-9E9E-4D9B-B5A0-C36E53042AC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{42C87521-3D26-43A3-827B-B9548AFEF4ED} = {EB85DCC5-F822-431C-A3AF-B654677654B5}
+		{8F96E41B-F1BC-4669-BAA7-50ECF03E68E7} = {7FCF794D-E657-43BE-98E8-CB24988FF49C}
+		{71440D29-E53B-47ED-AF93-992B920ECBF9} = {7FCF794D-E657-43BE-98E8-CB24988FF49C}
+		{B9AEAAD1-C450-4EA9-A974-BA24FEAAB965} = {F9458103-529B-4263-8B21-36FC7BD0ED58}
+		{55AAAFA1-07B7-433C-9187-D2DC2422EED4} = {F9458103-529B-4263-8B21-36FC7BD0ED58}
+		{554CA98E-A9C1-4498-969F-799899D5FD9D} = {A10D21D7-2790-4443-A59B-87BDD73ED7C6}
+		{C09D3536-BC69-4936-ABA9-BED283863CBE} = {A10D21D7-2790-4443-A59B-87BDD73ED7C6}
+		{D91B15CE-9E9E-4D9B-B5A0-C36E53042AC5} = {A10D21D7-2790-4443-A59B-87BDD73ED7C6}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6CC38176-0E39-472A-8CE8-68A6A2AAD053}
+	EndGlobalSection
+EndGlobal

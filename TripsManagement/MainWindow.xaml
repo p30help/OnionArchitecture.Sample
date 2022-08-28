@@ -1,0 +1,68 @@
+﻿<Window x:Class="TripsManagement.Endpoint.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TripsManagement"
+        mc:Ignorable="d"
+        Title="Trip Management" Height="250" Width="400" WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Loaded="MainWindow_OnLoaded"
+        Closed="MainWindow_OnClosed"
+        >
+    <DockPanel>
+        <StatusBar Height="30" DockPanel.Dock="Bottom">
+            <Label Height="30" FontSize="14" Content="By Mahdi Radi" Foreground="Gray"></Label>
+        </StatusBar>
+        <StackPanel DockPanel.Dock="Left" Width="200">
+            <Button x:Name="btnNewTrip" Margin="10,10,10,0" Height="30" Click="btnNewTrip_Click" >Add New Trip</Button>
+            <Button x:Name="btnCustomer" Margin="10,10,10,0" Height="30" Click="btnCustomer_Click">Customers List</Button>
+        </StackPanel>
+        <DataGrid Margin="10" 
+                  Name="dataGrid"
+                  ItemsSource="{Binding Items}"
+                  AlternatingRowBackground="#ccc"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="true"
+                  RowHeight="30"
+                  FontSize="18"
+        >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Title" Width="250" Binding="{Binding Path=Title}">
+
+                </DataGridTextColumn>
+                <DataGridCheckBoxColumn Header="Is Canceled" Width="100" Binding="{Binding Path=IsCanceled}"></DataGridCheckBoxColumn>
+                <DataGridTextColumn Header="Start Date" Width="100" Binding="{Binding Path=StartDate, StringFormat=d}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Finish Date" Width="100" Binding="{Binding Path=FinishDate, StringFormat=d}"></DataGridTextColumn>
+                
+                <DataGridTemplateColumn Header="Actions" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="btnView" Content="Edit" Click="btnEdit_Click" />
+                            
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Customers" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="btnShowCustomers" Content="Show" Click="btnShowCustomers_Click" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </DockPanel>
+
+
+
+
+
+</Window>

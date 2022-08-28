@@ -1,0 +1,29 @@
+﻿<Window x:Class="TripsManagement.Endpoint.WPF.TripFormWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TripsManagement.Endpoint.WPF"
+        mc:Ignorable="d"
+        Title="Trip Form" Height="250" Width="350" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" Loaded="Window_Loaded">
+    <StackPanel>
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <Label Width="100">Title</Label>
+            <TextBox x:Name="txTitle" Text="{Binding Title}" Width="200"></TextBox>
+        </StackPanel>
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <Label Width="100">Start Date</Label>
+            <DatePicker x:Name="dpcStart" SelectedDate="{Binding StartDate}" Width="200"></DatePicker>
+        </StackPanel>
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <Label Width="100">Finish Date</Label>
+            <DatePicker x:Name="dpcFinish" SelectedDate="{Binding FinishDate}" Width="200"></DatePicker>
+        </StackPanel>
+        <StackPanel Margin="5" Orientation="Horizontal">
+            <Label  Width="100">Is Canceled</Label>
+            <CheckBox x:Name="chbIsCanceled" IsEnabled="{Binding ActiveIsCanceled}" IsChecked="{Binding IsCanceled}"></CheckBox>
+        </StackPanel>
+
+        <Button Name="btnSave" Margin="5"  Click="BtnSave_OnClick">Save</Button>
+    </StackPanel>
+</Window>

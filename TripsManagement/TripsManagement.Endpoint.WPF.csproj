@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.3" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TripsManagement.Core.ApplicationServices\TripsManagement.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\TripsManagement.Core.DomainModels\TripsManagement.Core.DomainModels.csproj" />
+    <ProjectReference Include="..\TripsManagement.Infra.DataAccess.Sql.Commands\TripsManagement.Infra.DataAccess.Sql.Commands.csproj" />
+    <ProjectReference Include="..\TripsManagement.Infra.DataAccess.Sql.Queries\TripsManagement.Infra.DataAccess.Sql.Queries.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="TripFormWindow - Copy %282%29 - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TripFormWindow - Copy (2).xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TripFormWindow - Copy %282%29.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TripFormWindow.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="CustomerFormWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TripFormWindow - Copy - Copy %282%29.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TripFormWindow - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TripFormWindow - Copy - Copy - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TripFormWindow - Copy - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TripFormWindow - Copy - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TripFormWindow - Copy.xaml.cs</DependentUpon>
+    </Compile>
+    <Compile Update="TripFormWindow - Copy.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>TripFormWindow.xaml.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="TripCustomersWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomersWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CustomerFormWindow.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+
+</Project>

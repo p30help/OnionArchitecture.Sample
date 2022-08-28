@@ -1,0 +1,53 @@
+﻿<Window x:Class="TripsManagement.Endpoint.WPF.CustomersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TripsManagement"
+        mc:Ignorable="d"
+        Title="Customers List" Height="250" Width="400" WindowStartupLocation="CenterScreen" WindowState="Maximized"
+        Loaded="CustomersWindow_OnLoaded"
+        >
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Left" Width="200">
+            <Button x:Name="btnNewCustomer" Margin="10,10,10,0" Height="30" Click="btnNewCustomer_Click" >Add New Customer</Button>
+        </StackPanel>
+        <DataGrid Margin="10" 
+                  Name="dataGrid"
+                  ItemsSource="{Binding Items}"
+                  AlternatingRowBackground="#ccc"
+                  CanUserAddRows="False"
+                  CanUserDeleteRows="False"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="true"
+                  RowHeight="30"
+                  FontSize="18"
+        >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Record Date" Width="100" Binding="{Binding Path=RecordDate, StringFormat=d}"></DataGridTextColumn>
+                <DataGridTextColumn Header="First Name" Width="150" Binding="{Binding Path=FirstName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Last Name" Width="150" Binding="{Binding Path=LastName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Age" Width="70" Binding="{Binding Path=Age}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Mobile" Width="150" Binding="{Binding Path=Mobile}"></DataGridTextColumn>
+                
+                <DataGridTemplateColumn Header="Actions" Width="100">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Name="btnEdit" Content="Edit" Click="btnEdit_Click" />
+                            
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+
+    </DockPanel>
+
+
+
+
+
+</Window>
